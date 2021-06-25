@@ -1,0 +1,16 @@
+{
+    "entries":
+ [
+    {
+      "id": 1,
+      "description": "Work incom",
+      "value": 1000,
+      "isExpense": false
+    },
+    { "id": 2, "description": "Water incom", "value": 100, "isExpense": true },
+    { "id": 3, "description": "drink incom", "value": 4000, "isExpense": false },
+    { "id": 4, "description": "holla incom", "value": 1000, "isExpense": true },
+    { "id": 5, "description": "danger incom", "value": 600, "isExpense": false },
+    { "id": 6, "description": "Work incom", "value": 859, "isExpense": true }
+  ]
+}
