@@ -1,5 +1,6 @@
-import * as entriesSaga from "./entriesSaga";
+import { fork } from "redux-saga/effects";
+import watchUserAuthentication from "./watchers";
 
-export function initSagas(sagaMiddleware) {
-  Object.values(entriesSaga).forEach(sagaMiddleware.run.bind(sagaMiddleware));
+export default function* startForman() {
+  yield fork(watchUserAuthentication);
 }

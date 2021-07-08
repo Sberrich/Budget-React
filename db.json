@@ -1,16 +1,169 @@
 {
-    "entries":
- [
+  "register": [
     {
       "id": 1,
-      "description": "Work incom",
-      "value": 1000,
-      "isExpense": false
+      "username": "samir",
+      "email": "samir@gmail.com",
+      "password": "1234"
     },
-    { "id": 2, "description": "Water incom", "value": 100, "isExpense": true },
-    { "id": 3, "description": "drink incom", "value": 4000, "isExpense": false },
-    { "id": 4, "description": "holla incom", "value": 1000, "isExpense": true },
-    { "id": 5, "description": "danger incom", "value": 600, "isExpense": false },
-    { "id": 6, "description": "Work incom", "value": 859, "isExpense": true }
+    {
+      "data": {
+        "username": "xvxcbxb",
+        "email": "sdsds",
+        "password": "ssdsd"
+      },
+      "id": 2
+    },
+    {
+      "data": {
+        "username": "sdsd",
+        "email": "sdsds",
+        "password": "ssdsd"
+      },
+      "id": 3
+    },
+    {
+      "data": "sdsdsd",
+      "id": 4
+    },
+    {
+      "data": "sdsdsd",
+      "id": 5
+    },
+    {
+      "data": {
+        "username": "sdsd",
+        "email": "sdsds",
+        "password": "ssdsd"
+      },
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "data": {
+        "username": "dsadsaf",
+        "email": "sdsds",
+        "password": "ssdsd"
+      },
+      "id": 8
+    },
+    {
+      "data": {
+        "id": "984a3d1c-72e1-4ec8-8403-966b76999ea2",
+        "username": "sdsd",
+        "email": "sdsds",
+        "password": "ssdsd"
+      },
+      "id": 9
+    },
+    {
+      "data": {
+        "id": "38efe7b0-6454-4ab6-bc1f-e0248355ff92",
+        "username": "sdsds",
+        "email": "sdsds",
+        "password": "ssdsd"
+      },
+      "id": 10
+    },
+    {
+      "data": {
+        "id": "4177be9b-c4f9-40e3-8c06-074fd839e2eb",
+        "username": "hello",
+        "email": "sdsds",
+        "password": "ssdsd"
+      },
+      "id": 11
+    },
+    {
+      "data": {
+        "id": "c7c2abda-4322-446d-8344-0a20e671abc2",
+        "username": "hello",
+        "email": "sdsds",
+        "password": "ssdsd"
+      },
+      "id": 12
+    },
+    {
+      "data": {
+        "id": "29919f68-0129-4a97-8300-90e2887bebb2",
+        "username": "samir",
+        "email": "samir@gmail.com",
+        "password": "ssdsdsdsd"
+      },
+      "id": 13
+    },
+    {
+      "data": {
+        "id": "ff85019c-6d73-4b55-9def-829f27111d61",
+        "username": "samir",
+        "email": "samir@gmail.com",
+        "password": "ssdsdsdsd"
+      },
+      "id": 14
+    }
+  ],
+  "login": [
+    {
+      "data": {
+        "type": "LOGIN_USER",
+        "user": {
+          "email": "sdsds",
+          "password": "ssdsd"
+        }
+      },
+      "id": 1
+    },
+    {
+      "data": {
+        "type": "LOGIN_USER",
+        "user": {
+          "email": "sdsds",
+          "password": "ssdsd"
+        }
+      },
+      "id": 2
+    },
+    {
+      "data": {
+        "type": "LOGIN_USER",
+        "user": {
+          "email": "sdsds",
+          "password": "ssdsd"
+        }
+      },
+      "id": 3
+    },
+    {
+      "data": {
+        "type": "LOGIN_USER",
+        "user": {
+          "email": "sdsds",
+          "password": "ssdsd"
+        }
+      },
+      "id": 4
+    },
+    {
+      "data": {
+        "type": "LOGIN_USER",
+        "user": {
+          "email": "",
+          "password": "ssdsd"
+        }
+      },
+      "id": 5
+    },
+    {
+      "data": {
+        "type": "LOGIN_USER",
+        "user": {
+          "email": "samir@gmail.com",
+          "password": "ssdsdsdsd"
+        }
+      },
+      "id": 6
+    }
   ]
 }
