@@ -1,13 +1,36 @@
-import * as types from "../actions";
-// eslint-disable-next-line
-export default function (state = [], action) {
-  const response = action.response;
+import {
+  LOGIN_USER,
+  LOGIN_USER_ERROR,
+  LOGIN_USER_SUCCESS,
+} from "../actions/LoginAction";
 
+import { RESET_STATE } from "../actions/ResetAction";
+
+const DEFAULT_STATE = {
+  status: "offline",
+  error: null,
+};
+// eslint-disable-next-line
+export default function (state = DEFAULT_STATE, action) {
   switch (action.type) {
-    case types.LOGIN_USER_SUCCESS:
-      return { loginStatus: "success" };
-    case types.LOGIN_USER_ERROR:
-      return { loginStatus: "error" };
+    case LOGIN_USER:
+      return {
+        status: "loading",
+        error: null,
+      };
+    case LOGIN_USER_SUCCESS:
+      return {
+        status: "online",
+        error: null,
+      };
+    case LOGIN_USER_ERROR:
+      return {
+        status: "error",
+        error: action.error,
+      };
+
+    case RESET_STATE:
+      return "initial state";
     default:
       return state;
   }

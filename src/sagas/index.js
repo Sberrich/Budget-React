@@ -1,6 +1,7 @@
-import { fork } from "redux-saga/effects";
-import watchUserAuthentication from "./watchers";
-
-export default function* startForman() {
-  yield fork(watchUserAuthentication);
+import { fork, all } from "redux-saga/effects";
+import registerSaga from "./RegisterSaga";
+import LoginSaga from "./LoginSaga";
+// eslint-disable-next-line
+export default function* () {
+  yield all([fork(registerSaga), fork(LoginSaga)]);
 }

@@ -8,7 +8,7 @@ import {
   Segment,
 } from "semantic-ui-react";
 import { useDispatch, useSelector } from "react-redux";
-import { loginUserAction } from "../actions/authActions";
+import { LoginAction } from "../actions/LoginAction";
 import { useHistory } from "react-router-dom";
 
 const LoginForm = () => {
@@ -18,7 +18,7 @@ const LoginForm = () => {
   const goToHome = useSelector((state) => state.login.loginStatus);
   const history = useHistory();
   const handlSubmit = () => {
-    dispatch(loginUserAction({ email, password }));
+    dispatch(LoginAction({ email: email, password: password }));
   };
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const LoginForm = () => {
   return (
     <Grid textAlign="center" style={{ height: "100vh" }} verticalAlign="middle">
       <Grid.Column style={{ maxWidth: 450 }}>
-        <Header as="h2" color="orange" textAlign="center">
+        <Header as="h2" color="teal" textAlign="center">
           Log-in to your account
         </Header>
         <Form size="large" onSubmit={handlSubmit}>
@@ -56,7 +56,7 @@ const LoginForm = () => {
                 setPassword(e.target.value);
               }}
             />
-            <Button color="orange" fluid size="large">
+            <Button color="teal" fluid size="large">
               Login
             </Button>
           </Segment>

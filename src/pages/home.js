@@ -1,14 +1,7 @@
 import React from "react";
-import {
-  Button,
-  Form,
-  Grid,
-  Header,
-  Message,
-  Segment,
-} from "semantic-ui-react";
+import { Button, Grid, Header, Segment } from "semantic-ui-react";
 
-const home = () => {
+const Home = () => {
   return (
     <div>
       <div class="ui segment">
@@ -18,7 +11,7 @@ const home = () => {
         <div class="ui right rail">
           <div class="ui segment">Right Rail Content</div>
         </div>
-        {/* <h1></h1> */}
+
         <Grid
           textAlign="center"
           style={{ height: "100vh" }}
@@ -39,4 +32,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;
